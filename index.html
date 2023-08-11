@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Fira+Sans&family=Poppins&family=Raleway:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Bodoni Moda", serif;
+        font-family: "Fira Sans", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Raleway", sans-serif;
+
+        overflow-x: hidden;
+
+        /* background-color: #a4508b; */
+        background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+      }
+
+      .container {
+        animation: backgroundAnimation 8s alternate infinite;
+      }
+
+      .banner {
+        text-align: center;
+        padding: 100px 0;
+        /* background-color: #f5f5f5; */
+      }
+      .banner h1 {
+        font-size: 60px;
+        color: #ffffff;
+        margin: 0;
+      }
+      .banner p {
+        font-size: 18px;
+        color: #ffffff;
+        margin: 20px 0;
+      }
+      .get-started-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .outer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .inner-section {
+        flex: 1;
+        padding: 20px;
+        /* border: 1px solid #ccc; */
+        margin: 0 10px;
+      }
+
+      .inner-content {
+        text-align: center;
+      }
+      .inner-content {
+        color: white;
+      }
+      #main-heading {
+        font-size: 25px;
+        margin: 0;
+        padding-top: 5px;
+        color: white;
+      }
+
+      .inner-content i {
+        font-size: 80px;
+        color: white;
+      }
+
+      .icon {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Fira+Sans&family=Poppins&family=Raleway:wght@200;400;600&display=swap");
+
+      .banner h1,
+      .banner p,
+      .get-started-button {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .inner-section {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: slideIn 1s forwards;
+      }
+
+      @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes backgroundAnimation {
+        from {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+        to {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 768px) {
+        .banner h1 {
+          font-size: 40px;
+        }
+
+        .banner p {
+          font-size: 16px;
+        }
+
+        .inner-content i {
+          font-size: 60px;
+        }
+
+        .inner-content p {
+          font-size: 14px;
+        }
+        .outer-container {
+          flex-direction: column;
+        }
+
+        .banner {
+          text-align: center;
+          padding: 50px 0;
+          /* background-color: #f5f5f5; */
+        }
+
+        .inner-section {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .banner h1 {
+          font-size: 32px;
+        }
+
+        .banner p {
+          font-size: 14px;
+        }
+
+        .inner-content i {
+          font-size: 40px;
+        }
+
+        .inner-content p {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <h1>Design. Build. Enjoy.</h1>
+        <p>Discover the Art of Creation</p>
+        <a class="get-started-button" href="#">Get Started</a>
+      </div>
+
+      <div class="outer-container">
+        <div class="inner-section">
+          <div class="inner-content">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            <p id="main-heading">Quality Service</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              minima fugiat eius distinctio tempora quia voluptate nulla ullam
+              vero beatae, alias consectetur
+            </p>
+          </div>
+        </div>
+        <div class="inner-section">
+          <div class="inner-content">
+            <i class="fa-solid fa-users"></i>
+            <p id="main-heading">Super Support</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              minima fugiat eius distinctio tempora quia voluptate nulla ullam
+              vero beatae, alias consectetur
+            </p>
+          </div>
+        </div>
+        <div class="inner-section">
+          <div class="inner-content">
+            <i class="fa-solid fa-trophy"></i>
+            <p id="main-heading">Award Winning</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              minima fugiat eius distinctio tempora quia voluptate nulla ullam
+              vero beatae, alias consectetur
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
